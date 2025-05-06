@@ -26,10 +26,10 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.routing.key:crypto.data.batch}")
     private String routingKey;
 
-    @Value("${spring.rabbitmq.host:localhost}")
+    @Value("${spring.rabbitmq.host}")
     private String host;
 
-    @Value("${spring.rabbitmq.port:5672}")
+    @Value("${spring.rabbitmq.port}")
     private int port;
 
     @Value("${spring.rabbitmq.username:guest}")
