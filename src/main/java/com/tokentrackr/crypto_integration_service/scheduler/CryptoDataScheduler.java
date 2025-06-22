@@ -32,7 +32,7 @@ public class CryptoDataScheduler {
         this.schedulerEnabled = schedulerEnabled;
     }
 
-    @Scheduled(fixedDelayString = "${crypto.scheduler.interval:600000}")
+    @Scheduled(fixedDelayString = "${crypto.scheduler.interval:3600000}")
     public void fetchAndPublishCryptoData() {
         if (!schedulerEnabled) {
             logger.debug("Crypto data scheduler is disabled");
