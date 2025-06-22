@@ -63,5 +63,5 @@ jobs:
   
         - name: Build and push Docker image
           run: |
-            docker build -t ${{ secrets.DOCKER_USERNAME }}/crypto-read-service:latest .
-            docker push ${{ secrets.DOCKER_USERNAME }}/crypto-read-service:latest
+            docker build -t ${{ secrets.DOCKER_USERNAME }}/crypto-integration-service:latest .
+            docker push ${{ secrets.DOCKER_USERNAME }}/crypto-integration-service:latest
